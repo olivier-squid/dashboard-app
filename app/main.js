@@ -98,6 +98,12 @@ $( document ).ready(function() {
         squid_api.controller.analysisjob.compute(analysis);
     });
     
+    squid_api.model.status.on('change', function(model){
+        if (model.get("status") == model.STATUS_DONE) {
+            $("#main").removeClass("hidden");
+        }
+    });
+    
     /*
     analysis.on('change:results', function(data) {
         var rows = analysis.get("results").rows.slice(0,10);

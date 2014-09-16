@@ -3,10 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Squid Dashboard App</title>
+	<title>Demo App</title>
 	<link rel="stylesheet" type="text/css" href="app/style.css">
-    
-    <link href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet">
 
 	<!-- bower:css -->
   	<!-- endbower -->
@@ -17,7 +15,7 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div class="container" id="main">
+	<div class="container" id="header">
 		<div class="row">
 			<div class="col-md-9">
 				<div id="status"></div>
@@ -26,6 +24,8 @@
 				<div id="login"></div>
 			</div>
 		</div>
+	</div>
+	<div class="container hidden" id="main">
 		<div class="row">
 			<div class="col-md-3">
 				<h2>Period</h2>
